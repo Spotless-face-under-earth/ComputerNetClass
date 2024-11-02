@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="title">
+            About Me
+        </title>
+        <link rel="stylesheet" type="text/css" href="css\Self-Intro-Table.css">
+    </head>
+    <body>
+        <audio id="backgroundmusic" src="../resource/music/不老梦yl.mp3" autoplay loop>  
+        </audio> 
+        <div class="container">
+            <div class="header">
+                <h1 class="FirstTitle">自我介绍</h1>
+            </div>
+            <div class="grid-table">
+                <table class="Self-Intr-Table" style="width: 620px; margin: 20px auto; border-collapse: collapse;">
+                    <tr>
+                        <th>照 骗</th>
+                        <th>姓 名</th>
+                        <th>专 业</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="merged-cell"style="width: 420px;">
+                            <img src="../resource/images/selftake.jpg" alt="bushi" style="max-width: 100%; height: auto;object-fit: cover;">
+                        </td>
+                        <td style="width: 100px;">贾程皓</td>
+                        <td style="width: 100px;">信息安全</td>                        
+                    </tr>
+                    <tr>
+                        <th>学 号</th>
+                        <th>籍 贯</th>                   
+                    </tr>
+                    <tr>
+                        <td>2212790</td> 
+                        <td>云南 曲靖</td>  
+                    </tr>
+                    <tr>
+                        <th colspan="3">自我介绍</th>                    
+                    </tr>
+                    <tr>
+                        <td colspan="3">间歇性踌躇满志，持续性混吃等死的大学生~<br>
+                            喜欢看书、听音乐、旅游。<br>
+                            和喜欢的人在一起就会很开心。</td>                    
+                    </tr>
+                </table>          
+            </div>
+            <!-- 添加控制按钮（播放/暂停） -->  
+             <div text-align="center">
+                <button onclick="playPause()">开启音乐/关闭</button>  
+            </div>
+            <script>  
+                // 获取音频元素  
+                var audio = document.getElementById("backgroundmusic");  
+                var isPlaying = false;
+              // 播放/暂停函数  
+                function playPause() {  
+                    if (isPlaying) {  
+                        audio.pause();  
+                        isPlaying = false;  
+                    } else {  
+                        audio.play();  
+                        isPlaying = true;  
+                    }  
+                }  
+            </script>  
+        </div>
+    </body>
+</html>

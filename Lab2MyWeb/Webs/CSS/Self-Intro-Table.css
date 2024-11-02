@@ -1,0 +1,22 @@
+.Self-Intr-Table {
+  width: 100%;
+  border-collapse: collapse; /* 去掉单元格间的间隙 */
+  border: 2px solid #000 !important; /* 外边框 */
+}
+
+.Self-Intr-Table th,.Self-Intr-Table td {
+  border: 1px solid #000 !important; /* 内边框 */
+  padding: 20px;
+  text-align: center;
+}
+
+/* 合并的单元格样式 */
+.merged-cell {
+  vertical-align: middle;
+}
+
+.FirstTitle {
+  text-align: center; /* 居中对齐 */
+  font-size: 24px;
+  margin: 20px 0; /* 设置上下间距 */
+}
